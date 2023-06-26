@@ -42,17 +42,17 @@ jobs:
 
       builddate: "${{ needs.Set-repos.outputs.builddate }}"
 
-      KERNEL_NAME: kona_with_kernelsu
-      KERNEL_REPO: https://github.com/xAsukax/android_kernel_oppo_sm8250
-      KERNEL_BRANCH: coloros13
-      KERNEL_DEVICE: kona
+      KERNEL_NAME: ${{ matrix.repos.kernelSource.name }}
+      KERNEL_REPO: ${{ matrix.repos.kernelSource.repo }}
+      KERNEL_BRANCH: ${{ matrix.repos.kernelSource.branch }}
+      KERNEL_DEVICE: ${{ matrix.repos.kernelSource.device }}
 
-      DEFCONFIG_NAME: vendor/kona_defconfig
+      DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
-      withKernelSU: true
-      ccache: true
-      useAnykernel: true
-      release: true
+      withKernelSU: ${{ matrix.repos.withKernelSU }}
+      ccache: ${{ matrix.repos.ccache }}
+      useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
+      release: ${{ matrix.repos.AnyKernel3.release }}
     steps:
       - name: "⭐ Install prerequisites"
         run: |
@@ -83,8 +83,8 @@ jobs:
         env:
           params: "${{ toJSON(matrix.repos.AnyKernel3) }}"
         run: |
-          ANYKERNEL_REPO=https://github.com/xAsukax/AnyKernel3
-          ANYKERNEL_BRANCH=kona
+          ANYKERNEL_REPO=$(echo $params | jq -r ".repo")
+          ANYKERNEL_BRANCH=$(echo $params | jq -r ".branch")
           git clone --recursive --depth=1 -j $(nproc) --branch $ANYKERNEL_BRANCH $ANYKERNEL_REPO AnyKernel3
 
           echo "🤔 Setup Anykernel3 => ($ANYKERNEL_REPO)"
