@@ -1,4 +1,4 @@
-[{
+{
   "kernelSource": {
     "name": "kona_with_kernelsu",
     "repo": "https://github.com/xAsukax/android_kernel_oppo_sm8250",
@@ -40,5 +40,5 @@
       "repo": "https://github.com/xAsukax/AnyKernel3/",
       "branch": "kona"
     }
-  }]
+  }
 
