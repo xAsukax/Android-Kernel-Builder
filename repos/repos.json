@@ -1,6 +1,6 @@
 {
   "kernelSource": {
-    "name": "android_kernel_oppo_sm8250",
+    "name": "kona_with_kernelsu",
     "repo": "https://github.com/xAsukax/android_kernel_oppo_sm8250",
     "branch": "coloros13",
     "device": "kona",
