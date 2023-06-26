@@ -41,10 +41,10 @@
       }
     },
     "AnyKernel3": {
-      "use": false,
-      "release": false,
+      "use": true,
+      "release": true,
       "repo": "https://github.com/xAsukax/AnyKernel3/",
-      "branch": "OP4A7A"
+      "branch": "kona"
     }
   }
 ]]
