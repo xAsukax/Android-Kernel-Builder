@@ -47,7 +47,7 @@ jobs:
       KERNEL_BRANCH: coloros13
       KERNEL_DEVICE: kona
 
-      DEFCONFIG_NAME: kona_defconfig
+      DEFCONFIG_NAME: op4a79_defconfig
 
       withKernelSU: true
       ccache: true
