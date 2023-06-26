@@ -42,17 +42,17 @@ jobs:
 
       builddate: "${{ needs.Set-repos.outputs.builddate }}"
 
-      KERNEL_NAME: ${{ matrix.repos.kernelSource.name }}
-      KERNEL_REPO: ${{ matrix.repos.kernelSource.repo }}
-      KERNEL_BRANCH: ${{ matrix.repos.kernelSource.branch }}
-      KERNEL_DEVICE: ${{ matrix.repos.kernelSource.device }}
+      KERNEL_NAME: kona_with_kernelsu
+      KERNEL_REPO: https://github.com/xAsukax/android_kernel_oppo_sm8250
+      KERNEL_BRANCH: coloros13
+      KERNEL_DEVICE: kona
 
-      DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
+      DEFCONFIG_NAME: vendor/kona_defconfig
 
-      withKernelSU: ${{ matrix.repos.withKernelSU }}
-      ccache: ${{ matrix.repos.ccache }}
-      useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
-      release: ${{ matrix.repos.AnyKernel3.release }}
+      withKernelSU: true
+      ccache: true
+      useAnykernel: true
+      release: true
     steps:
       - name: "⭐ Install prerequisites"
         run: |
