@@ -1,8 +1,8 @@
 [{
   "kernelSource": {
     "name": "kona_with_kernelsu",
-    "repo": "https://github.com/youngguo18/android_kernel_oppo_sm8250",
-    "branch": "12.1",
+    "repo": "https://github.com/xAsukax/android_kernel_oppo_sm8250-1",
+    "branch": "oppo/sm8250_t_13.0.0_1220",
     "device": "kona",
     "defconfig": "kona_defconfig"
   },
