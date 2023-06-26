@@ -37,7 +37,7 @@
     "AnyKernel3": {
       "use": false,
       "release": false,
-      "repo": "https://github.com/xAsukax/AnyKernel3/",
+      "repo": "https://github.com/xAsukax/AnyKernel3",
       "branch": "kona"
     }
   }
