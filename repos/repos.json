@@ -9,30 +9,29 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/EmanuelCN/zyc_clang-14",
-        "branch": "master",
-        "name": "zyc-clang",
-        "binPath": ["bin"]
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-13.0.0_r54/clang-r450784d.tar.gz",
+        "name": "clang",
+        "binPath": ["./bin"]
       }
     ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "zyc-clang/bin/clang",
+      "CC": "clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "zyc-clang/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "zyc-clang/bin/arm-linux-androideabi-",
-        "LD": "zyc-clang/bin/ld.lld",
-        "AR": "zyc-clang/bin/llvm-ar",
-        "NM": "zyc-clang/bin/llvm-nm",
-        "OBJCOPY": "zyc-clang/bin/llvm-objcopy",
-        "OBJDUMP": "zyc-clang/bin/llvm-objdump",
-        "READELF": "zyc-clang/bin/llvm-readelf",
-        "OBJSIZE": "zyc-clang/bin/llvm-size",
-        "STRIP": "zyc-clang/bin/llvm-strip",
-        "LDGOLD": "zyc-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "zyc-clang/bin/llvm-ar",
-        "LLVM_DIS": "zyc-clang/bin/llvm-dis"
+        "CROSS_COMPILE": "clang/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-androideabi-",
+        "LD": "clang/bin/ld.lld",
+        "AR": "clang/bin/llvm-ar",
+        "NM": "clang/bin/llvm-nm",
+        "OBJCOPY": "clang/bin/llvm-objcopy",
+        "OBJDUMP": "clang/bin/llvm-objdump",
+        "READELF": "clang/bin/llvm-readelf",
+        "OBJSIZE": "clang/bin/llvm-size",
+        "STRIP": "clang/bin/llvm-strip",
+        "LDGOLD": "clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "clang/bin/llvm-ar",
+        "LLVM_DIS": "clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
