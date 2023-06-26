@@ -1,4 +1,4 @@
-{
+[{
   "kernelSource": {
     "name": "kona_with_kernelsu",
     "repo": "https://github.com/xAsukax/android_kernel_oppo_sm8250",
@@ -12,11 +12,6 @@
         "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-13.0.0_r54/clang-r450784d.tar.gz",
         "name": "clang",
         "binPath": ["./bin"]
-      },
-      {
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/961622e926a1b21382dba4dd9fe0e5fb3ee5ab7c.tar.gz",
-        "name": "gcc",
-        "binPath": ["bin"]
       }
     ],
     "ccache": true,
@@ -24,9 +19,8 @@
       "ARCH": "arm64",
       "CC": "clang/bin/clang",
       "externalCommand": {
-        "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
-        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-androideabi-",
+        "CROSS_COMPILE": "clang/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-androideabi-",
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
         "NM": "clang/bin/llvm-nm",
