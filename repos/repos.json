@@ -3,7 +3,7 @@
     "name": "android_kernel_oppo_sm8250",
     "repo": "https://github.com/xAsukax/android_kernel_oppo_sm8250",
     "branch": "coloros13",
-    "device": "PDEM30",
+    "device": "kona",
     "defconfig": ""
   },
     "withKernelSU": true,
