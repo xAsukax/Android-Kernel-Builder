@@ -9,7 +9,7 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "url": "https://gitea.com/Mandi-Sa/clang",
+        "url": "https://gitea.com/Mandi-Sa/clang/src/branch/amd64-kernel-arm",
         "name": "amd64-kernel-arm",
         "binPath": ["./bin"]
       }
