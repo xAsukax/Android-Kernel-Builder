@@ -19,6 +19,7 @@
         "name": "clang"
       }
     ],
+
     "params": {
       "ARCH": "arm64",
       "CROSS_COMPILE": "aarch64-linux-gnu-",
@@ -27,7 +28,7 @@
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "AR": "",
       "CC": "clang"
-    },
+    }
     "AnyKernel3": {
       "use": true,
       "release": true,
