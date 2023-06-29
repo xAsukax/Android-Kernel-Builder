@@ -27,7 +27,6 @@
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "AR": "",
       "CC": "clang"
-    }
     },
     "AnyKernel3": {
       "use": true,
