@@ -9,8 +9,8 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-13.0.0_r54/clang-r450784d.tar.gz",
-        "name": "clang",
+        "url": "https://gitea.com/Mandi-Sa/clang",
+        "name": "amd64-kernel-arm",
         "binPath": ["./bin"]
       }
     ],
@@ -19,8 +19,8 @@
       "ARCH": "arm64",
       "CC": "clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "clang/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-androideabi-",
+        "CROSS_COMPILE": "clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-gnueabi-",
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
         "NM": "clang/bin/llvm-nm",
